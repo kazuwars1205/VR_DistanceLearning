@@ -40,9 +40,9 @@ public class LauncherScript : Photon.PunBehaviour
     //JoinRandomRoomが失敗したときに呼ばれる
     public override void OnPhotonRandomJoinFailed(object[] codeAndMsg)
     {
-        Debug.Log("ルームの入室に失敗しました。");
+        //Debug.Log("ルームの入室に失敗しました。");
         //TestRoomという名前の部屋を作成して、部屋に入る
-        PhotonNetwork.CreateRoom("TestRoom");
+        PhotonNetwork.CreateRoom("Room1");
     }
 
     //部屋に入った時に呼ばれる
